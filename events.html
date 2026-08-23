@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Events | Lekgoledi Arts & Cultural Centre</title>
+
+<meta name="description" content="Stay updated with upcoming events, cultural activities, performances, exhibitions and creative gatherings hosted by Lekgoledi Arts & Cultural Centre." />
+
+<meta name="keywords" content="Lekgoledi events, cultural events, arts events, performances, exhibitions, creative gatherings, Limpopo events, South Africa" />
+
+<meta name="author" content="Lekgoledi Arts & Cultural Centre" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a4b7a" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://lekgolediarts.co.za/events.html" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lekgolediarts.co.za/events.html" />
+<meta property="og:title" content="Events | Lekgoledi Arts & Cultural Centre" />
+<meta property="og:description" content="Stay updated with upcoming cultural events, performances, exhibitions and creative gatherings." />
+<meta property="og:image" content="https://lekgolediarts.co.za/images/og-image.jpg" />
+<meta property="og:image:alt" content="Lekgoledi Arts & Cultural Centre Events" />
+<meta property="og:site_name" content="Lekgoledi Arts & Cultural Centre" />
+<meta property="og:locale" content="en_ZA" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Events | Lekgoledi Arts & Cultural Centre" />
+<meta name="twitter:description" content="Stay updated with upcoming cultural events, performances, exhibitions and creative gatherings." />
+<meta name="twitter:image" content="https://lekgolediarts.co.za/images/og-image.jpg" />
+<meta name="twitter:image:alt" content="Lekgoledi Arts & Cultural Centre Events" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#1E5F8E',
+            brandGreen: '#4A8C5C',
+            brandYellow: '#D4A11E',
+            brandRed: '#B13E4B',
+            navy: '#0B1A2F',
+            cream: '#F8F4E8',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0B1A2F;
+      color: #F8F4E8;
+      overflow-x: hidden;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0B1A2F; }
+    ::-webkit-scrollbar-thumb { background: #D4A11E; border-radius: 4px; }
+
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      background: transparent;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0.5rem 0;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .nav-logo { flex-shrink: 0; display: flex; align-items: center; }
+    .nav-logo img { height: 62px; width: auto; transition: transform 0.3s ease; max-height: 62px; }
+    .nav-logo:hover img { transform: scale(1.04); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      position: relative;
+      padding: 0.3rem 0;
+      transition: color 0.3s ease;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 2px;
+      background: #D4A11E;
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { width: 100%; }
+    .navbar.scrolled .nav-links a { color: rgba(11, 26, 47, 0.75); }
+    .navbar.scrolled .nav-links a:hover { color: #0B1A2F; }
+
+    .nav-cta {
+      padding: 0.55rem 1.8rem;
+      background: linear-gradient(135deg, #1E5F8E 0%, #4A8C5C 33%, #D4A11E 66%, #B13E4B 100%);
+      background-size: 300% 100%;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(30, 95, 142, 0.3);
+    }
+    .nav-cta::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      transition: left 0.5s ease;
+    }
+    .nav-cta:hover::before { left: 100%; }
+    .nav-cta:hover {
+      background-position: 100% 0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(30, 95, 142, 0.4);
+    }
+    .navbar.scrolled .nav-cta { box-shadow: 0 4px 15px rgba(30, 95, 142, 0.2); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 5px;
+      flex-shrink: 0;
+      margin-left: auto;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1001;
+    }
+    .hamburger span {
+      display: block;
+      width: 28px;
+      height: 2.5px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+    .navbar.scrolled .hamburger span { background: #0B1A2F; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    .sidebar {
+      position: fixed;
+      top: 0; right: -400px;
+      width: 380px;
+      max-width: 90vw;
+      height: 100vh;
+      background: #fff;
+      z-index: 1001;
+      transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      padding: 6rem 2rem 2rem;
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      overflow-y: auto;
+      border-left: 1px solid rgba(0,0,0,0.06);
+    }
+    .sidebar.open { right: 0; }
+    .sidebar-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .sidebar-overlay.open { opacity: 1; pointer-events: all; }
+    .sidebar-logo { text-align: center; margin-bottom: 2rem; }
+    .sidebar-logo img { height: 70px; width: auto; }
+    .sidebar-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .sidebar-links a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.9rem 1.2rem;
+      color: rgba(11, 26, 47, 0.75);
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 500;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+    .sidebar-links a i { width: 24px; text-align: center; color: #1E5F8E; }
+    .sidebar-links a:hover {
+      background: rgba(30, 95, 142, 0.06);
+      color: #0B1A2F;
+      transform: translateX(6px);
+    }
+    .sidebar-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .sidebar-social a {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(30, 95, 142, 0.06);
+      border: 1px solid rgba(30, 95, 142, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1E5F8E;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .sidebar-social a:hover {
+      background: #1E5F8E;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+    .sidebar-cta {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.9rem;
+      background: linear-gradient(135deg, #1E5F8E 0%, #4A8C5C 33%, #D4A11E 66%, #B13E4B 100%);
+      background-size: 300% 100%;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .sidebar-cta:hover {
+      background-position: 100% 0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(30, 95, 142, 0.3);
+    }
+
+    /* Page Hero */
+    .page-hero {
+      min-height: 55vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('images/heritage.JPG') center/cover no-repeat;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(11,26,47,0.55) 0%, rgba(11,26,47,0.9) 100%);
+    }
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 10rem 2rem 4rem;
+      max-width: 900px;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      color: #F8F4E8;
+    }
+    .page-hero h1 .hl-yellow { color: #D4A11E; }
+    .page-hero p {
+      font-size: 1.05rem;
+      color: rgba(248, 244, 232, 0.65);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.85rem;
+      color: rgba(248,244,232,0.5);
+    }
+    .breadcrumb a { color: rgba(248,244,232,0.6); text-decoration: none; transition: color 0.3s; }
+    .breadcrumb a:hover { color: #D4A11E; }
+    .breadcrumb i { font-size: 0.6rem; color: #D4A11E; }
+
+    .section { padding: 5rem 0; position: relative; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.8rem;
+      color: #F8F4E8;
+    }
+    .section-title .hl-blue { color: #1E5F8E; }
+    .section-title .hl-green { color: #4A8C5C; }
+    .section-title .hl-yellow { color: #D4A11E; }
+    .section-title .hl-red { color: #B13E4B; }
+    .section-subtitle {
+      text-align: center;
+      color: rgba(248, 244, 232, 0.5);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+
+    /* Festival Banner */
+    .festival-banner {
+      max-width: 1200px;
+      margin: 0 auto 4rem;
+      padding: 0 2rem;
+    }
+    .festival-banner-inner {
+      background: linear-gradient(135deg, rgba(30,95,142,0.15) 0%, rgba(74,140,92,0.1) 50%, rgba(177,62,75,0.08) 100%);
+      border: 1px solid rgba(248,244,232,0.06);
+      border-radius: 24px;
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .festival-banner-inner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1E5F8E, #4A8C5C, #D4A11E, #B13E4B);
+    }
+    .festival-banner-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #F8F4E8;
+    }
+    .festival-banner-inner p {
+      color: rgba(248,244,232,0.6);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .festival-banner-inner .date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: rgba(212,161,30,0.12);
+      border: 1px solid rgba(212,161,30,0.2);
+      border-radius: 40px;
+      color: #D4A11E;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .festival-banner-inner .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 2rem;
+      background: #D4A11E;
+      color: #0B1A2F;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 24px rgba(212, 161, 30, 0.25);
+    }
+    .festival-banner-inner .btn-primary:hover {
+      background: #F0D080;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(212, 161, 30, 0.35);
+    }
+    .festival-stats-inline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .festival-stats-inline .stat {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(248,244,232,0.03);
+      border-radius: 16px;
+      border: 1px solid rgba(248,244,232,0.05);
+    }
+    .festival-stats-inline .stat .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #D4A11E;
+    }
+    .festival-stats-inline .stat .lbl {
+      font-size: 0.7rem;
+      color: rgba(248,244,232,0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    /* Events Grid */
+    .events-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .event-card {
+      background: rgba(248, 244, 232, 0.02);
+      border: 1px solid rgba(248, 244, 232, 0.06);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .event-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+      border-color: rgba(212, 161, 30, 0.1);
+    }
+    .event-card.main-event {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+    }
+    .event-card .card-img-wrap {
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+    }
+    .event-card.main-event .card-img-wrap {
+      height: 100%;
+      min-height: 320px;
+    }
+    .event-card .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .event-card:hover .card-img-wrap img { transform: scale(1.08); }
+    .event-card .card-img-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(11,26,47,0.85), transparent);
+    }
+    .event-card .buildup-num {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 2;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+    .event-card .card-category {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 2;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .event-body {
+      padding: 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .event-body .event-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .event-body .event-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(248,244,232,0.4);
+      font-size: 0.8rem;
+    }
+    .event-body .event-meta span i { font-size: 0.75rem; }
+    .event-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #F8F4E8;
+      line-height: 1.35;
+    }
+    .event-card.main-event .event-body h3 {
+      font-size: 1.6rem;
+    }
+    .event-body p {
+      color: rgba(248, 244, 232, 0.55);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      flex: 1;
+    }
+    .event-body .event-activities {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .event-body .event-activities span {
+      padding: 0.25rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 500;
+    }
+    .event-body .co-host {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.2rem;
+      padding: 0.4rem 1rem;
+      background: rgba(248,244,232,0.03);
+      border: 1px solid rgba(248,244,232,0.06);
+      border-radius: 40px;
+      color: rgba(248,244,232,0.5);
+      font-size: 0.8rem;
+    }
+    .event-body .co-host i { color: #D4A11E; font-size: 0.7rem; }
+
+    /* Past Events */
+    .past-events-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .past-card {
+      background: rgba(248, 244, 232, 0.015);
+      border: 1px solid rgba(248, 244, 232, 0.04);
+      border-radius: 20px;
+      padding: 1.8rem;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .past-card:hover {
+      border-color: rgba(212, 161, 30, 0.1);
+      background: rgba(248, 244, 232, 0.03);
+      transform: translateY(-4px);
+    }
+    .past-card .past-date {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+    }
+    .past-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #F8F4E8;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .past-card p {
+      color: rgba(248,244,232,0.5);
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+    .past-card .past-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: rgba(248,244,232,0.35);
+    }
+    .past-card .past-tag i { font-size: 0.65rem; }
+
+    /* Partners */
+    .partners-section {
+      padding: 3rem 0;
+      background: radial-gradient(ellipse at 50% 100%, rgba(177,62,75,0.06) 0%, #0B1A2F 60%);
+      border-top: 1px solid rgba(248, 244, 232, 0.04);
+      border-bottom: 1px solid rgba(248, 244, 232, 0.04);
+      overflow: hidden;
+    }
+    .partners-track {
+      display: flex;
+      gap: 2.5rem;
+      animation: marquee 32s linear infinite;
+      width: max-content;
+      align-items: center;
+    }
+    .partners-track:hover { animation-play-state: paused; }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .partner-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1.2rem;
+      background: #fff;
+      border-radius: 12px;
+      height: 72px;
+      min-width: 140px;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+    .partner-logo img {
+      max-height: 52px;
+      max-width: 120px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(0%);
+      transition: all 0.3s ease;
+    }
+    .partner-logo:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+    /* Footer */
+    .footer {
+      background: #0B1A2F;
+      padding: 4rem 0 2rem;
+      border-top: 1px solid rgba(248, 244, 232, 0.06);
+      position: relative;
+    }
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,161,30,0.3), transparent);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .footer-brand img {
+      height: 104px;
+      width: auto;
+      margin-bottom: 1rem;
+      filter: brightness(1.1);
+    }
+    .footer-brand p {
+      color: rgba(248, 244, 232, 0.45);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      max-width: 360px;
+    }
+    .footer-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #F8F4E8;
+      margin-bottom: 1.2rem;
+    }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.6rem; }
+    .footer-links a {
+      color: rgba(248, 244, 232, 0.45);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .footer-links a:hover {
+      color: #D4A11E;
+      transform: translateX(4px);
+    }
+    .footer-links a i {
+      font-size: 0.6rem;
+      color: #D4A11E;
+    }
+    .footer-social {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+    .footer-social a {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(248, 244, 232, 0.05);
+      border: 1px solid rgba(248, 244, 232, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(248, 244, 232, 0.6);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .footer-social a:hover {
+      background: #D4A11E;
+      color: #0B1A2F;
+      border-color: #D4A11E;
+      transform: translateY(-3px);
+    }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding: 1.5rem 2rem 0;
+      border-top: 1px solid rgba(248, 244, 232, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(248, 244, 232, 0.25);
+      font-size: 0.8rem;
+    }
+    .footer-bottom .heart { color: #B13E4B; }
+    .footer-bottom a { color: rgba(248,244,232,0.35); text-decoration: none; transition: color 0.3s; }
+    .footer-bottom a:hover { color: #D4A11E; }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px; right: 30px;
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, #1E5F8E, #4A8C5C);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 999;
+      border: none;
+      box-shadow: 0 4px 20px rgba(30, 95, 142, 0.3);
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .back-to-top:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(135deg, #4A8C5C, #D4A11E);
+    }
+
+    @media (max-width: 1024px) {
+      .events-grid { grid-template-columns: 1fr; }
+      .event-card.main-event {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+      }
+      .event-card.main-event .card-img-wrap { min-height: 240px; height: 240px; }
+      .festival-banner-inner { grid-template-columns: 1fr; }
+      .past-events-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none !important; }
+      .nav-cta { display: none !important; }
+      .hamburger { display: flex !important; }
+      .past-events-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+      .sidebar { width: 320px; max-width: 85vw; padding: 5rem 1.5rem 1.5rem; }
+      .page-hero h1 { font-size: 2rem; }
+      .festival-stats-inline { grid-template-columns: 1fr; }
+    }
+
+    [data-aos] { pointer-events: none; }
+    [data-aos].aos-animate { pointer-events: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Lekgoledi Arts & Cultural Centre" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#focus">Focus</a></li>
+        <li><a href="index.html#festival">Festival 2026</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get Involved</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="Lekgoledi Arts & Cultural Centre" />
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="about.html" class="sidebar-link"><i class="fas fa-circle-info"></i> About</a></li>
+      <li><a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="index.html#focus" class="sidebar-link"><i class="fas fa-compass"></i> Focus Areas</a></li>
+      <li><a href="index.html#festival" class="sidebar-link"><i class="fas fa-star"></i> Festival 2026</a></li>
+      <li><a href="events.html" class="sidebar-link"><i class="fas fa-calendar-alt"></i> Events</a></li>
+      <li><a href="gallery.html" class="sidebar-link"><i class="fas fa-images"></i> Gallery</a></li>
+      <li><a href="news.html" class="sidebar-link"><i class="fas fa-newspaper"></i> News</a></li>
+    </ul>
+    <a href="contact.html" class="sidebar-cta">Get Involved</a>
+    <div class="sidebar-social">
+      <a href="https://www.facebook.com/LEKGOLEDI/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/company/lekgoledi-arts?originalSubdomain=za" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/_lekgolediartsandculture/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </aside>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content" data-aos="fade-up" data-aos-duration="800">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Events</span>
+      </div>
+      <h1>Upcoming <span class="hl-yellow">Events</span></h1>
+      <p>From build-up events across Capricorn and Sekhukhune to the grand Heritage Festival finale - join us in celebrating Limpopo's rich cultural tapestry.</p>
+    </div>
+  </section>
+
+  <!-- Festival Banner -->
+  <section class="section" style="padding-bottom:0; background: radial-gradient(ellipse at 50% 0%, rgba(74,140,92,0.08) 0%, #0B1A2F 60%);">
+    <div class="festival-banner" data-aos="fade-up" data-aos-duration="800">
+      <div class="festival-banner-inner">
+        <div>
+          <span class="date-badge"><i class="fas fa-calendar-alt"></i> 25 September 2026</span>
+          <h2>Limpopo Cultural Heritage Festival 2026</h2>
+          <p>The 4th Annual Sepedi Cultural Heritage Festival expands into the Limpopo Cultural Heritage Festival, celebrating Bapedi, Vha-Tsonga, Vha-Venda, and Ndebele cultures. Five build-up events lead to the grand finale at Bapedi Royal Kingdom.</p>
+          <a href="#buildup-events" class="btn-primary" style="margin-top:1rem;"><i class="fas fa-arrow-down"></i> View Build-Up Events</a>
+        </div>
+        <div class="festival-stats-inline">
+          <div class="stat"><div class="num">5+</div><div class="lbl">Build-Up Events</div></div>
+          <div class="stat"><div class="num">100+</div><div class="lbl">Artists Featured</div></div>
+          <div class="stat"><div class="num">2</div><div class="lbl">Districts</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Build-Up Events -->
+  <section class="section" id="buildup-events">
+    <div data-aos="fade-up" data-aos-duration="800">
+      <h2 class="section-title">
+        Festival <span class="hl-blue">Build-Up</span>
+        <span class="hl-green">Events</span>
+      </h2>
+      <p class="section-subtitle">A series of monthly events leading to the grand finale on Heritage Day, co-hosted with Traditional Authorities across Limpopo.</p>
+    </div>
+
+    <div class="events-grid">
+
+      <!-- Main Closing Festival -->
+      <div class="event-card main-event" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img-wrap">
+          <img src="images/heritage.JPG" alt="Main Closing Festival" />
+          <span class="buildup-num" style="background:#D4A11E;"><i class="fas fa-crown"></i></span>
+          <span class="card-category" style="background:rgba(212,161,30,0.85); color:#0B1A2F;">Main Event</span>
+        </div>
+        <div class="event-body">
+          <div class="event-meta">
+            <span><i class="fas fa-calendar-alt"></i> 25 September 2026</span>
+            <span><i class="fas fa-map-marker-alt"></i> Bapedi Royal Kingdom, Mohlaletse</span>
+            <span><i class="fas fa-clock"></i> 2 Days</span>
+          </div>
+          <h3>Main Closing Festival - Cultural Heritage Celebration</h3>
+          <p>The grand finale celebrating Bapedi, Vha-Tsonga, Vha-Venda and Ndebele cultures. Two days of cultural dance groups, brass band and live band performances, indigenous music, poetry, wedding step groups, Tjate Heritage Site tours, crafters and visual artists.</p>
+          <div class="event-activities">
+            <span style="background:rgba(30,95,142,0.12); color:#5BA3D0;">Cultural Dance</span>
+            <span style="background:rgba(74,140,92,0.12); color:#6DB87E;">Brass Bands</span>
+            <span style="background:rgba(212,161,30,0.12); color:#E8C04A;">Indigenous Music</span>
+            <span style="background:rgba(177,62,75,0.12); color:#D0606E;">Poetry</span>
+            <span style="background:rgba(30,95,142,0.12); color:#5BA3D0;">Heritage Tours</span>
+            <span style="background:rgba(74,140,92,0.12); color:#6DB87E;">Visual Arts</span>
+          </div>
+          <span class="co-host"><i class="fas fa-handshake"></i> Hosted with Bapedi Royal Kingdom, COGHSTA & Dept of Tourism</span>
+        </div>
+      </div>
+
+      <!-- Build Up 1 -->
+      <div class="event-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-img-wrap">
+          <img src="images/community.JPG" alt="Traditional Dance Showcase" />
+          <span class="buildup-num" style="background:#1E5F8E;">01</span>
+          <span class="card-category" style="background:rgba(30,95,142,0.85); color:#fff;">Build Up 1</span>
+        </div>
+        <div class="event-body">
+          <div class="event-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Capricorn District</span>
+          </div>
+          <h3>Traditional &amp; Contemporary Dance Showcase</h3>
+          <p>Cultural dance groups, brass band music performance, poetry, wedding step groups, instrumental musicians, crafters and visual artists. Includes a Bakone Malapa Open Museum tour and Tjate Heritage site tour.</p>
+          <div class="event-activities">
+            <span style="background:rgba(30,95,142,0.12); color:#5BA3D0;">Dance</span>
+            <span style="background:rgba(74,140,92,0.12); color:#6DB87E;">Brass Band</span>
+            <span style="background:rgba(212,161,30,0.12); color:#E8C04A;">Poetry</span>
+            <span style="background:rgba(177,62,75,0.12); color:#D0606E;">Heritage Tour</span>
+          </div>
+          <span class="co-host"><i class="fas fa-handshake"></i> Co-hosted by Mphahlele Traditional Authority</span>
+        </div>
+      </div>
+
+      <!-- Build Up 2 -->
+      <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-img-wrap">
+          <img src="images/hero3.JPG" alt="Bapedi Music Showcase" />
+          <span class="buildup-num" style="background:#4A8C5C;">02</span>
+          <span class="card-category" style="background:rgba(74,140,92,0.85); color:#fff;">Build Up 2</span>
+        </div>
+        <div class="event-body">
+          <div class="event-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Sekhukhune District</span>
+          </div>
+          <h3>Bapedi Music Showcase</h3>
+          <p>Indigenous music, brass bands, live performances, and workshops on the business of arts. A celebration of Bapedi musical heritage featuring both traditional and contemporary artists.</p>
+          <div class="event-activities">
+            <span style="background:rgba(74,140,92,0.12); color:#6DB87E;">Indigenous Music</span>
+            <span style="background:rgba(30,95,142,0.12); color:#5BA3D0;">Brass Bands</span>
+            <span style="background:rgba(212,161,30,0.12); color:#E8C04A;">Live Bands</span>
+            <span style="background:rgba(177,62,75,0.12); color:#D0606E;">Business Workshop</span>
+          </div>
+          <span class="co-host"><i class="fas fa-handshake"></i> Co-hosted by Zebediela Traditional Authority</span>
+        </div>
+      </div>
+
+      <!-- Build Up 3 -->
+      <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img-wrap">
+          <img src="images/art.JPG" alt="Poetry and Visual Arts" />
+          <span class="buildup-num" style="background:#D4A11E;">03</span>
+          <span class="card-category" style="background:rgba(212,161,30,0.85); color:#0B1A2F;">Build Up 3</span>
+        </div>
+        <div class="event-body">
+          <div class="event-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Mafefe Traditional Authority</span>
+          </div>
+          <h3>Poetry, Storytelling &amp; Visual Arts</h3>
+          <p>Spoken word performances, traditional storytelling sessions, and visual arts exhibitions by local crafters. An inter-generational platform for cultural knowledge exchange.</p>
+          <div class="event-activities">
+            <span style="background:rgba(212,161,30,0.12); color:#E8C04A;">Spoken Word</span>
+            <span style="background:rgba(30,95,142,0.12); color:#5BA3D0;">Storytelling</span>
+            <span style="background:rgba(74,140,92,0.12); color:#6DB87E;">Visual Arts</span>
+            <span style="background:rgba(177,62,75,0.12); color:#D0606E;">Crafters</span>
+          </div>
+          <span class="co-host"><i class="fas fa-handshake"></i> Co-hosted by Mafefe Traditional Authority</span>
+        </div>
+      </div>
+
+      <!-- Build Up 4 -->
+      <div class="event-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-img-wrap">
+          <img src="images/hero4.JPG" alt="Art-Tourism Event" />
+          <span class="buildup-num" style="background:#B13E4B;">04</span>
+          <span class="card-category" style="background:rgba(177,62,75,0.85); color:#fff;">Build Up 4</span>
+        </div>
+        <div class="event-body">
+          <div class="event-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Roka Phasha</span>
+          </div>
+          <h3>Khwiting ya Noka Art-Tourism Event</h3>
+          <p>A unique fusion of art and tourism promoting cultural heritage destinations and rural lodges. Showcasing how arts and culture can drive village tourism and local economic development.</p>
+          <div class="event-activities">
+            <span style="background:rgba(177,62,75,0.12); color:#D0606E;">Art-Tourism</span>
+            <span style="background:rgba(212,161,30,0.12); color:#E8C04A;">Heritage Sites</span>
+            <span style="background:rgba(74,140,92,0.12); color:#6DB87E;">Rural Lodges</span>
+            <span style="background:rgba(30,95,142,0.12); color:#5BA3D0;">Cultural Destinations</span>
+          </div>
+          <span class="co-host"><i class="fas fa-handshake"></i> Co-hosted under Roka Phasha Traditional Authority</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Past Events -->
+  <section class="section" style="background: radial-gradient(ellipse at 50% 100%, rgba(30,95,142,0.06) 0%, #0B1A2F 60%); border-top:1px solid rgba(248,244,232,0.04);">
+    <div data-aos="fade-up" data-aos-duration="800">
+      <h2 class="section-title">
+        Past <span class="hl-red">Events</span>
+      </h2>
+      <p class="section-subtitle">Highlights from our previous programmes, workshops and celebrations.</p>
+    </div>
+    <div class="past-events-grid">
+      <div class="past-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="past-date" style="background:rgba(30,95,142,0.12); color:#5BA3D0;"><i class="fas fa-calendar-alt"></i> 30 July 2021</span>
+        <h4>Animation Training Graduation</h4>
+        <p>13 visual artists from rural communities graduated after completing a 4-month digital art and animation training funded by the NFVF.</p>
+        <span class="past-tag"><i class="fas fa-tag"></i> Animation</span>
+      </div>
+      <div class="past-card" data-aos="fade-up" data-aos-delay="150">
+        <span class="past-date" style="background:rgba(177,62,75,0.12); color:#D0606E;"><i class="fas fa-calendar-alt"></i> 14 Aug &amp; 16 Oct 2021</span>
+        <h4>GBV Awareness Workshops</h4>
+        <p>Two creative workshops in Lebowakgomo and Zebediela funded by Solidarity Fund and Act Ubumbano to raise awareness and educate youth.</p>
+        <span class="past-tag"><i class="fas fa-tag"></i> GBV Awareness</span>
+      </div>
+      <div class="past-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="past-date" style="background:rgba(74,140,92,0.12); color:#6DB87E;"><i class="fas fa-calendar-alt"></i> Nov 2021 - Jun 2022</span>
+        <h4>CodeJIKA Coding Programme</h4>
+        <p>Web development training for learners from Kgwadiamoleke and Magatle Secondary Schools using the CodeJIKA.com curriculum.</p>
+        <span class="past-tag"><i class="fas fa-tag"></i> Coding</span>
+      </div>
+      <div class="past-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="past-date" style="background:rgba(212,161,30,0.12); color:#E8C04A;"><i class="fas fa-calendar-alt"></i> 13 - 23 Sept 2021</span>
+        <h4>NYDA Business Development Training</h4>
+        <p>7-day New Venture training for youth aged 18–34 on starting businesses and community engagement, held at LACC studio.</p>
+        <span class="past-tag"><i class="fas fa-tag"></i> Business</span>
+      </div>
+      <div class="past-card" data-aos="fade-up" data-aos-delay="150">
+        <span class="past-date" style="background:rgba(30,95,142,0.12); color:#5BA3D0;"><i class="fas fa-calendar-alt"></i> 25 June 2021</span>
+        <h4>Rural DJs Online Streaming Show</h4>
+        <p>Digital live stream show in collaboration with Tlatsa Kgamelo Publisher, empowering young DJs with equipment and music training.</p>
+        <span class="past-tag"><i class="fas fa-tag"></i> Events</span>
+      </div>
+      <div class="past-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="past-date" style="background:rgba(74,140,92,0.12); color:#6DB87E;"><i class="fas fa-calendar-alt"></i> 24 September 2021</span>
+        <h4>Heritage Day at Magatle Primary</h4>
+        <p>Director Judith Mokalapa celebrated Heritage Day with learners through music, dancing, drama and poetry performances.</p>
+        <span class="past-tag"><i class="fas fa-tag"></i> Heritage</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Marquee -->
+  <section class="partners-section" id="partners">
+    <div style="text-align:center; margin-bottom:2rem;" data-aos="fade-up">
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:#F8F4E8; opacity:0.9;">Our Valued Partners</h3>
+    </div>
+    <div class="partners-track" id="partnersTrack">
+      <div class="partner-logo"><img src="images/partners/act.png" alt="Act Ubumbano" /></div>
+      <div class="partner-logo"><img src="images/partners/artsculture.png" alt="Dept of Sports, Arts & Culture" /></div>
+      <div class="partner-logo"><img src="images/partners/capricorn.png" alt="Capricorn District Municipality" /></div>
+      <div class="partner-logo"><img src="images/partners/coghsra.png" alt="COGHSTA" /></div>
+      <div class="partner-logo"><img src="images/partners/jika.png" alt="CodeJIKA" /></div>
+      <div class="partner-logo"><img src="images/partners/nrbf.png" alt="NFVF" /></div>
+      <div class="partner-logo"><img src="images/partners/sekhukhune.png" alt="Sekhukhune District Municipality" /></div>
+      <div class="partner-logo"><img src="images/partners/solidarity.png" alt="Solidarity Fund" /></div>
+      <div class="partner-logo"><img src="images/partners/thobela.png" alt="Thobela FM" /></div>
+      <div class="partner-logo"><img src="images/partners/tourism.png" alt="Dept of Tourism" /></div>
+      <div class="partner-logo"><img src="images/partners/ul.png" alt="University of Limpopo" /></div>
+      <div class="partner-logo"><img src="images/partners/act.png" alt="Act Ubumbano" /></div>
+      <div class="partner-logo"><img src="images/partners/artsculture.png" alt="Dept of Sports, Arts & Culture" /></div>
+      <div class="partner-logo"><img src="images/partners/capricorn.png" alt="Capricorn District Municipality" /></div>
+      <div class="partner-logo"><img src="images/partners/coghsra.png" alt="COGHSTA" /></div>
+      <div class="partner-logo"><img src="images/partners/jika.png" alt="CodeJIKA" /></div>
+      <div class="partner-logo"><img src="images/partners/nffffff.jpg" alt="NFVF" /></div>
+      <div class="partner-logo"><img src="images/partners/sekhukhune.png" alt="Sekhukhune District Municipality" /></div>
+      <div class="partner-logo"><img src="images/partners/solidarity.png" alt="Solidarity Fund" /></div>
+      <div class="partner-logo"><img src="images/partners/thobela.png" alt="Thobela FM" /></div>
+      <div class="partner-logo"><img src="images/partners/tourism.png" alt="Dept of Tourism" /></div>
+      <div class="partner-logo"><img src="images/partners/ul.png" alt="University of Limpopo" /></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/footer.png" alt="Lekgoledi Arts & Cultural Centre" />
+        <p>A women and youth-led rural-based community arts organization in Lebowakgomo, Limpopo, pioneering the development of the rural creative and cultural arts sector.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/LEKGOLEDI/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/lekgoledi-arts?originalSubdomain=za" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/_lekgolediartsandculture/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="index.html#focus"><i class="fas fa-chevron-right"></i> Focus Areas</a></li>
+          <li><a href="index.html#festival"><i class="fas fa-chevron-right"></i> Festival 2026</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+          <li><a href="news.html"><i class="fas fa-chevron-right"></i> News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Our Work</h4>
+        <ul class="footer-links">
+          <li><a href="news.html"><i class="fas fa-chevron-right"></i> Animation Training</a></li>
+          <li><a href="news.html"><i class="fas fa-chevron-right"></i> Coding Programmes</a></li>
+          <li><a href="news.html"><i class="fas fa-chevron-right"></i> GBV Awareness</a></li>
+          <li><a href="index.html#festival"><i class="fas fa-chevron-right"></i> Heritage Festival</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Get Involved</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          <li><a href="#partners"><i class="fas fa-chevron-right"></i> Partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Lekgoledi Arts &amp; Cultural Centre. All rights reserved.</span>
+      <span>Developed by <a href="https://valoyitech.co.za/" target="_blank" rel="noopener noreferrer">ValoyItech</a></span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    (function() {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-out-cubic'
+      });
+
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+        document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+      });
+
+      document.getElementById('backToTop').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      const hamburger = document.getElementById('hamburger');
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+
+      function openSidebar() {
+        sidebar.classList.add('open');
+        overlay.classList.add('open');
+        hamburger.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('open');
+        hamburger.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      window.closeSidebar = closeSidebar;
+
+      hamburger.addEventListener('click', () => {
+        if (sidebar.classList.contains('open')) closeSidebar();
+        else openSidebar();
+      });
+      overlay.addEventListener('click', closeSidebar);
+      document.querySelectorAll('.sidebar-link').forEach(link => link.addEventListener('click', closeSidebar));
+    })();
+  </script>
+</body>
+</html>
