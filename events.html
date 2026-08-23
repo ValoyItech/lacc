@@ -611,7 +611,30 @@
     }
     .event-body .co-host i { color: #D4A11E; font-size: 0.7rem; }
 
-    /* Past Events */
+    /* Past Events Section with Image BG */
+    .past-events-section {
+      position: relative;
+      padding: 5rem 0;
+      overflow: hidden;
+    }
+    .past-events-section .bg-image {
+      position: absolute;
+      inset: 0;
+      background: url('images/gallery/IMG_3949.JPG') center/cover no-repeat;
+      z-index: 0;
+    }
+    .past-events-section .bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(11,26,47,0.88) 0%, rgba(11,26,47,0.92) 50%, rgba(11,26,47,0.88) 100%);
+      z-index: 1;
+    }
+    .past-events-section > .section-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Past Events Grid */
     .past-events-grid {
       max-width: 1200px;
       margin: 0 auto;
@@ -621,18 +644,20 @@
       gap: 1.5rem;
     }
     .past-card {
-      background: rgba(248, 244, 232, 0.015);
-      border: 1px solid rgba(248, 244, 232, 0.04);
+      background: rgba(248, 244, 232, 0.04);
+      border: 1px solid rgba(248, 244, 232, 0.08);
       border-radius: 20px;
       padding: 1.8rem;
       transition: all 0.4s ease;
       position: relative;
       overflow: hidden;
+      backdrop-filter: blur(8px);
     }
     .past-card:hover {
-      border-color: rgba(212, 161, 30, 0.1);
-      background: rgba(248, 244, 232, 0.03);
+      border-color: rgba(212, 161, 30, 0.2);
+      background: rgba(248, 244, 232, 0.07);
       transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
     }
     .past-card .past-date {
       display: inline-flex;
@@ -655,7 +680,7 @@
       line-height: 1.4;
     }
     .past-card p {
-      color: rgba(248,244,232,0.5);
+      color: rgba(248,244,232,0.55);
       font-size: 0.88rem;
       line-height: 1.7;
     }
@@ -665,9 +690,134 @@
       gap: 0.3rem;
       margin-top: 1rem;
       font-size: 0.78rem;
-      color: rgba(248,244,232,0.35);
+      color: rgba(248,244,232,0.4);
     }
     .past-card .past-tag i { font-size: 0.65rem; }
+
+    /* Impact Stats Section */
+    .impact-section {
+      position: relative;
+      padding: 5rem 0;
+      overflow: hidden;
+    }
+    .impact-section .impact-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(30,95,142,0.1) 0%, #0B1A2F 60%);
+      z-index: 0;
+    }
+    .impact-section .impact-topline {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1E5F8E, #4A8C5C, #D4A11E, #B13E4B);
+      z-index: 1;
+    }
+    .impact-section > .section-inner {
+      position: relative;
+      z-index: 2;
+    }
+    .impact-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .impact-card {
+      background: rgba(248, 244, 232, 0.02);
+      border: 1px solid rgba(248, 244, 232, 0.06);
+      border-radius: 20px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .impact-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1E5F8E, #4A8C5C);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .impact-card:hover::before { opacity: 1; }
+    .impact-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 161, 30, 0.12);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+    }
+    .impact-card .impact-icon {
+      width: 56px; height: 56px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.4rem;
+    }
+    .impact-card .impact-number {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+    }
+    .impact-card .impact-label {
+      color: rgba(248,244,232,0.5);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .impact-card .impact-sublabel {
+      color: rgba(248,244,232,0.35);
+      font-size: 0.75rem;
+      margin-top: 0.3rem;
+    }
+    .impact-summary {
+      max-width: 900px;
+      margin: 3rem auto 0;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .impact-summary-box {
+      background: rgba(248, 244, 232, 0.03);
+      border: 1px solid rgba(248, 244, 232, 0.06);
+      border-radius: 20px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .impact-summary-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      text-align: left;
+    }
+    .impact-summary-item .icon-wrap {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    .impact-summary-item h5 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #F8F4E8;
+      margin-bottom: 0.3rem;
+    }
+    .impact-summary-item p {
+      color: rgba(248,244,232,0.5);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
 
     /* Partners */
     .partners-section {
@@ -847,6 +997,8 @@
       .event-card.main-event .card-img-wrap { min-height: 240px; height: 240px; }
       .festival-banner-inner { grid-template-columns: 1fr; }
       .past-events-grid { grid-template-columns: repeat(2, 1fr); }
+      .impact-grid { grid-template-columns: repeat(2, 1fr); }
+      .impact-summary-box { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 768px) {
@@ -854,6 +1006,7 @@
       .nav-cta { display: none !important; }
       .hamburger { display: flex !important; }
       .past-events-grid { grid-template-columns: 1fr; }
+      .impact-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
       .sidebar { width: 320px; max-width: 85vw; padding: 5rem 1.5rem 1.5rem; }
@@ -864,6 +1017,7 @@
     [data-aos] { pointer-events: none; }
     [data-aos].aos-animate { pointer-events: auto; }
   </style>
+
 </head>
 <body>
 
@@ -1079,49 +1233,139 @@
   </section>
 
   <!-- Past Events -->
-  <section class="section" style="background: radial-gradient(ellipse at 50% 100%, rgba(30,95,142,0.06) 0%, #0B1A2F 60%); border-top:1px solid rgba(248,244,232,0.04);">
-    <div data-aos="fade-up" data-aos-duration="800">
-      <h2 class="section-title">
-        Past <span class="hl-red">Events</span>
-      </h2>
-      <p class="section-subtitle">Highlights from our previous programmes, workshops and celebrations.</p>
+  <section class="past-events-section" id="past-events">
+    <div class="bg-image"></div>
+    <div class="bg-overlay"></div>
+    <div class="section-inner">
+      <div data-aos="fade-up" data-aos-duration="800">
+        <h2 class="section-title">
+          Past <span class="hl-red">Events</span>
+        </h2>
+        <p class="section-subtitle">Highlights from our previous programmes, workshops and celebrations.</p>
+      </div>
+      <div class="past-events-grid">
+        <div class="past-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="past-date" style="background:rgba(30,95,142,0.15); color:#5BA3D0;"><i class="fas fa-calendar-alt"></i> 30 July 2021</span>
+          <h4>Animation Training Graduation</h4>
+          <p>13 visual artists from rural communities graduated after completing a 4-month digital art and animation training funded by the NFVF.</p>
+          <span class="past-tag"><i class="fas fa-tag"></i> Animation</span>
+        </div>
+        <div class="past-card" data-aos="fade-up" data-aos-delay="150">
+          <span class="past-date" style="background:rgba(177,62,75,0.15); color:#D0606E;"><i class="fas fa-calendar-alt"></i> 14 Aug &amp; 16 Oct 2021</span>
+          <h4>GBV Awareness Workshops</h4>
+          <p>Two creative workshops in Lebowakgomo and Zebediela funded by Solidarity Fund and Act Ubumbano to raise awareness and educate youth.</p>
+          <span class="past-tag"><i class="fas fa-tag"></i> GBV Awareness</span>
+        </div>
+        <div class="past-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="past-date" style="background:rgba(74,140,92,0.15); color:#6DB87E;"><i class="fas fa-calendar-alt"></i> Nov 2021 - Jun 2022</span>
+          <h4>CodeJIKA Coding Programme</h4>
+          <p>Web development training for learners from Kgwadiamoleke and Magatle Secondary Schools using the CodeJIKA.com curriculum.</p>
+          <span class="past-tag"><i class="fas fa-tag"></i> Coding</span>
+        </div>
+        <div class="past-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="past-date" style="background:rgba(212,161,30,0.15); color:#E8C04A;"><i class="fas fa-calendar-alt"></i> 13 - 23 Sept 2021</span>
+          <h4>NYDA Business Development Training</h4>
+          <p>7-day New Venture training for youth aged 18–34 on starting businesses and community engagement, held at LACC studio.</p>
+          <span class="past-tag"><i class="fas fa-tag"></i> Business</span>
+        </div>
+        <div class="past-card" data-aos="fade-up" data-aos-delay="150">
+          <span class="past-date" style="background:rgba(30,95,142,0.15); color:#5BA3D0;"><i class="fas fa-calendar-alt"></i> 25 June 2021</span>
+          <h4>Rural DJs Online Streaming Show</h4>
+          <p>Digital live stream show in collaboration with Tlatsa Kgamelo Publisher, empowering young DJs with equipment and music training.</p>
+          <span class="past-tag"><i class="fas fa-tag"></i> Events</span>
+        </div>
+        <div class="past-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="past-date" style="background:rgba(74,140,92,0.15); color:#6DB87E;"><i class="fas fa-calendar-alt"></i> 24 September 2021</span>
+          <h4>Heritage Day at Magatle Primary</h4>
+          <p>Director Judith Mokalapa celebrated Heritage Day with learners through music, dancing, drama and poetry performances.</p>
+          <span class="past-tag"><i class="fas fa-tag"></i> Heritage</span>
+        </div>
+      </div>
     </div>
-    <div class="past-events-grid">
-      <div class="past-card" data-aos="fade-up" data-aos-delay="100">
-        <span class="past-date" style="background:rgba(30,95,142,0.12); color:#5BA3D0;"><i class="fas fa-calendar-alt"></i> 30 July 2021</span>
-        <h4>Animation Training Graduation</h4>
-        <p>13 visual artists from rural communities graduated after completing a 4-month digital art and animation training funded by the NFVF.</p>
-        <span class="past-tag"><i class="fas fa-tag"></i> Animation</span>
+  </section>
+
+  <!-- Past Festival Impact Stats -->
+  <section class="impact-section" id="impact">
+    <div class="impact-bg"></div>
+    <div class="impact-topline"></div>
+    <div class="section-inner">
+      <div data-aos="fade-up" data-aos-duration="800">
+        <h2 class="section-title">
+          Past Festival <span class="hl-yellow">Impact</span> in Numbers
+        </h2>
+        <p class="section-subtitle">Measurable outcomes from our previous festivals and programmes driving rural creative economy.</p>
       </div>
-      <div class="past-card" data-aos="fade-up" data-aos-delay="150">
-        <span class="past-date" style="background:rgba(177,62,75,0.12); color:#D0606E;"><i class="fas fa-calendar-alt"></i> 14 Aug &amp; 16 Oct 2021</span>
-        <h4>GBV Awareness Workshops</h4>
-        <p>Two creative workshops in Lebowakgomo and Zebediela funded by Solidarity Fund and Act Ubumbano to raise awareness and educate youth.</p>
-        <span class="past-tag"><i class="fas fa-tag"></i> GBV Awareness</span>
+      <div class="impact-grid">
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="impact-icon" style="background:rgba(30,95,142,0.12); color:#5BA3D0;">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="impact-number" style="color:#5BA3D0;" data-count="110" data-prefix="" data-suffix="" data-decimals="0">0</div>
+          <div class="impact-label">Jobs Created</div>
+          <div class="impact-sublabel">Direct employment opportunities</div>
+        </div>
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="impact-icon" style="background:rgba(74,140,92,0.12); color:#6DB87E;">
+            <i class="fas fa-store"></i>
+          </div>
+          <div class="impact-number" style="color:#6DB87E;" data-count="362276.55" data-prefix="R" data-suffix="" data-decimals="2">R0</div>
+          <div class="impact-label">Spend on 54 SMMEs &amp; Suppliers</div>
+          <div class="impact-sublabel">Services rendered by local businesses</div>
+        </div>
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="impact-icon" style="background:rgba(212,161,30,0.12); color:#E8C04A;">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <div class="impact-number" style="color:#E8C04A;" data-count="123250" data-prefix="R" data-suffix="" data-decimals="2">R0</div>
+          <div class="impact-label">Stipends &amp; Coordination Fees</div>
+          <div class="impact-sublabel">Professional and general work</div>
+        </div>
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="impact-icon" style="background:rgba(177,62,75,0.12); color:#D0606E;">
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="impact-number" style="color:#D0606E;" data-count="153890" data-prefix="R" data-suffix="" data-decimals="2">R0</div>
+          <div class="impact-label">Artists Performance Fees</div>
+          <div class="impact-sublabel">Paid to performing artists</div>
+        </div>
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="impact-icon" style="background:rgba(30,95,142,0.12); color:#5BA3D0;">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="impact-number" style="color:#5BA3D0;" data-count="455000" data-prefix="R" data-suffix="" data-decimals="2">R0</div>
+          <div class="impact-label">Co-funding from COGHSTA</div>
+          <div class="impact-sublabel">Catering, marquee, decoration, sound &amp; security</div>
+        </div>
+        <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="impact-icon" style="background:rgba(212,161,30,0.12); color:#E8C04A;">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="impact-number" style="color:#E8C04A;" data-count="30000" data-prefix="R" data-suffix="" data-decimals="2">R0</div>
+          <div class="impact-label">Royal Bapedi Kingdom</div>
+          <div class="impact-sublabel">Support from Traditional Authority</div>
+        </div>
       </div>
-      <div class="past-card" data-aos="fade-up" data-aos-delay="200">
-        <span class="past-date" style="background:rgba(74,140,92,0.12); color:#6DB87E;"><i class="fas fa-calendar-alt"></i> Nov 2021 - Jun 2022</span>
-        <h4>CodeJIKA Coding Programme</h4>
-        <p>Web development training for learners from Kgwadiamoleke and Magatle Secondary Schools using the CodeJIKA.com curriculum.</p>
-        <span class="past-tag"><i class="fas fa-tag"></i> Coding</span>
-      </div>
-      <div class="past-card" data-aos="fade-up" data-aos-delay="100">
-        <span class="past-date" style="background:rgba(212,161,30,0.12); color:#E8C04A;"><i class="fas fa-calendar-alt"></i> 13 - 23 Sept 2021</span>
-        <h4>NYDA Business Development Training</h4>
-        <p>7-day New Venture training for youth aged 18–34 on starting businesses and community engagement, held at LACC studio.</p>
-        <span class="past-tag"><i class="fas fa-tag"></i> Business</span>
-      </div>
-      <div class="past-card" data-aos="fade-up" data-aos-delay="150">
-        <span class="past-date" style="background:rgba(30,95,142,0.12); color:#5BA3D0;"><i class="fas fa-calendar-alt"></i> 25 June 2021</span>
-        <h4>Rural DJs Online Streaming Show</h4>
-        <p>Digital live stream show in collaboration with Tlatsa Kgamelo Publisher, empowering young DJs with equipment and music training.</p>
-        <span class="past-tag"><i class="fas fa-tag"></i> Events</span>
-      </div>
-      <div class="past-card" data-aos="fade-up" data-aos-delay="200">
-        <span class="past-date" style="background:rgba(74,140,92,0.12); color:#6DB87E;"><i class="fas fa-calendar-alt"></i> 24 September 2021</span>
-        <h4>Heritage Day at Magatle Primary</h4>
-        <p>Director Judith Mokalapa celebrated Heritage Day with learners through music, dancing, drama and poetry performances.</p>
-        <span class="past-tag"><i class="fas fa-tag"></i> Heritage</span>
+      <div class="impact-summary" data-aos="fade-up" data-aos-delay="250">
+        <div class="impact-summary-box">
+          <div class="impact-summary-item">
+            <div class="icon-wrap" style="background:rgba(30,95,142,0.1); color:#5BA3D0;">
+              <i class="fas fa-users"></i>
+            </div>
+            <div>
+              <h5>Community Impact</h5>
+              <p>Over 110 jobs created directly through festival activities, with significant economic ripple effects across rural Limpopo communities.</p>
+            </div>
+          </div>
+          <div class="impact-summary-item">
+            <div class="icon-wrap" style="background:rgba(74,140,92,0.1); color:#6DB87E;">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div>
+              <h5>Economic Injection</h5>
+              <p>Over R1.1 million in total economic activity, with R362k+ flowing directly to 54 local SMMEs and suppliers for services rendered.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1137,7 +1381,7 @@
       <div class="partner-logo"><img src="images/partners/capricorn.png" alt="Capricorn District Municipality" /></div>
       <div class="partner-logo"><img src="images/partners/coghsra.png" alt="COGHSTA" /></div>
       <div class="partner-logo"><img src="images/partners/jika.png" alt="CodeJIKA" /></div>
-      <div class="partner-logo"><img src="images/partners/nrbf.png" alt="NFVF" /></div>
+      <div class="partner-logo"><img src="images/partners/nffffff.jpg" alt="NFVF" /></div>
       <div class="partner-logo"><img src="images/partners/sekhukhune.png" alt="Sekhukhune District Municipality" /></div>
       <div class="partner-logo"><img src="images/partners/solidarity.png" alt="Solidarity Fund" /></div>
       <div class="partner-logo"><img src="images/partners/thobela.png" alt="Thobela FM" /></div>
@@ -1249,6 +1493,51 @@
       });
       overlay.addEventListener('click', closeSidebar);
       document.querySelectorAll('.sidebar-link').forEach(link => link.addEventListener('click', closeSidebar));
+
+      // Scroll-triggered counter animation
+      function animateCounter(el, target, prefix, suffix, decimals, duration) {
+        const start = performance.now();
+        function update(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // easeOutQuart
+          const eased = 1 - Math.pow(1 - progress, 4);
+          const current = target * eased;
+          if (decimals > 0) {
+            el.textContent = prefix + current.toLocaleString('en-ZA', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) + suffix;
+          } else {
+            el.textContent = prefix + Math.floor(current).toLocaleString('en-ZA') + suffix;
+          }
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            if (decimals > 0) {
+              el.textContent = prefix + target.toLocaleString('en-ZA', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) + suffix;
+            } else {
+              el.textContent = prefix + Math.floor(target).toLocaleString('en-ZA') + suffix;
+            }
+          }
+        }
+        requestAnimationFrame(update);
+      }
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseFloat(el.dataset.count);
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const decimals = parseInt(el.dataset.decimals || '0');
+            animateCounter(el, target, prefix, suffix, decimals, 2000);
+            counterObserver.unobserve(el);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll('.impact-number[data-count]').forEach(el => {
+        counterObserver.observe(el);
+      });
     })();
   </script>
 </body>
